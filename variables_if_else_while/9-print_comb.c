@@ -1,34 +1,25 @@
 #include <stdio.h>
 
 /**
-* main - Prints all possible combinations of two digits
+* main - Prints all possible combinations of single-digit numbers
 *
-* Description: 
-*   Prints all combinations of two different digits in ascending order.
-*   Digits are separated by a comma followed by a space, except the last one.
-*   Only putchar is allowed. No variables of type char are used.
-*
-* Return: 0
+* Description:
+*   Numbers are separated by ", " and printed in ascending order.
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-int i, j; /* Loop counters for the first and second digit */
+int n;
 
-for (i = 0; i <= 8; i++) /* First digit goes from 0 to 8 */
+for (n = 0; n <= 9; n++)
 {
-for (j = i + 1; j <= 9; j++) /* Second digit goes from i+1 to 9 */
-{
-putchar(i + '0'); /* Print first digit */
-putchar(j + '0'); /* Print second digit */
-
- /* Print ", " after each combination except the last */
-if (!(i == 8 && j == 9))
+putchar(n + '0');
+if (n != 9)
 {
 putchar(',');
 putchar(' ');
 }
 }
-}
-putchar('\n'); /* Print newline at the end */
+putchar('\n');
 return (0);
 }
