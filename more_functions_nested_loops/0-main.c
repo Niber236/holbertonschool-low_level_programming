@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /*jjj
- * kk */
+* kk */
 int main(void)
 {
 char c;
