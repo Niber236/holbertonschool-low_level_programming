@@ -1,4 +1,6 @@
-#include "main.h"  /* pour inclure le prototype */
+#include "main.h" 
+/* pour inclure le prototype
+ * important */
 
 int _isupper(int c)
 {
