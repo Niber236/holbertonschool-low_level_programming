@@ -1,13 +1,15 @@
-/* 0-isupper.c */
 #include "main.h"
 
 /**
-* _isupper - Vérifie si un caractère est une lettre majuscule (A-Z).
-* @c: Le caractère à tester (représenté comme un int).
+* _isdigit - Vérifie si le caractère est un chiffre (0 à 9)
+* @c: caractère à tester
 *
-* Return: 1 si c est une majuscule, 0 sinon.
+* Return: 1 si c est un chiffre, 0 sinon
 */
-int _isupper(int c)
+int _isdigit(int c)
 {
-return (c >= 'A' && c <= 'Z');
+if (c >= '0' && c <= '9')
+return (1);
+else
+return (0);
 }

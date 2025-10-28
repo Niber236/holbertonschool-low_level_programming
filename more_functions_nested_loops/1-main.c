@@ -1,7 +1,18 @@
-/* main.h */
-#ifndef MAIN_H
-#define MAIN_H
+/* 1-main.c */
+#include "main.h"
+#include <stdio.h>
 
-int _isupper(int c);
+int main(void)
+{
+char c;
 
-#endif /* MAIN_H */
+c = '0';
+printf("%c: %d\n", c, _isdigit(c));
+c = 'a';
+printf("%c: %d\n", c, _isdigit(c));
+c = '9';
+printf("%c: %d\n", c, _isdigit(c));
+c = 'A';
+printf("%c: %d\n", c, _isdigit(c));
+return (0);
+}
