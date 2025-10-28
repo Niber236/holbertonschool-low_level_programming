@@ -1,9 +1,9 @@
-/* main.h */
 #ifndef MAIN_H
 #define MAIN_H
 
-int _isdigit(int c);
 int _isupper(int c);
-int _putchar(char c); /* seulement si utilisé ailleurs*/
+int _isdigit(int c);
+int mul(int a, int b);
+int _putchar(char c); /* si utilisé ailleurs */
 
-#endif
+#endif /* MAIN_H */
