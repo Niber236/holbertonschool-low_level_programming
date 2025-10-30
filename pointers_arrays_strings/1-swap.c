@@ -1,6 +1,4 @@
 #include "main.h"
-
-void swap_int(int *a, int *b)
 /**
  * swap_int - swaps the values of two integers
  * @a: pointer to the first integer
@@ -8,6 +6,7 @@ void swap_int(int *a, int *b)
  *
  * Return: void
  */
+void swap_int(int *a, int *b)
 {
 int temp;
 
