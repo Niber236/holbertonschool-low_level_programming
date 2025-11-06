@@ -1,16 +1,18 @@
-#include <stdio.h>
-/*
-*je doit afficher sans la boucle donc en recuversiter
+#include "main.h"
+
+/**
+* _puts_recursion - affiche une chaîne de caractères suivie d'un saut de ligne
+* @s: chaîne à afficher
+*
+* Return: rien
 */
-/* patch Holberton */
 void _puts_recursion(char *s)
 {
 if (*s == '\0')
 {
-putchar ('\n');
+_putchar('\n');
 return;
 }
-putchar (*s);
+_putchar(*s);
 _puts_recursion(s + 1);
 }
-
