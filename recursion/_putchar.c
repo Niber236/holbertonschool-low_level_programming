@@ -1,13 +1,6 @@
-#include <stdio.h>
+#include <unistd.h>
 
-/* Fonction récursive pour afficher une chaîne */
-void _puts_recursion(char *s)
+int _putchar(char c)
 {
-    if (*s == '\0')
-    {
-        putchar('\n');
-        return;
-    }
-    putchar(*s);
-    _puts_recursion(s + 1);
+    return write(1, &c, 1);
 }
