@@ -2,6 +2,7 @@
 /*
 *je doit afficher sans la boucle donc en recuversiter
 */
+/* patch Holberton */
 void _puts_recursion(char *s)
 {
 if (*s == '\0')

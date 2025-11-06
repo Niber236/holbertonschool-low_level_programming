@@ -1,0 +1,12 @@
+diff --git a/0-puts_recursion.c b/0-puts_recursion.c
+index 6c83e91..e45c05f 100644
+--- a/0-puts_recursion.c
++++ b/0-puts_recursion.c
+@@ -2,6 +2,7 @@
+ /*
+ *je doit afficher sans la boucle donc en recuversiter
+ */
++/* patch Holberton */
+ void _puts_recursion(char *s)
+ {
+ if (*s == '\0')
