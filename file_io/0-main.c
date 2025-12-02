@@ -1,18 +1,24 @@
 #include <stdio.h>
-#include "dog.h"
+#include <stdlib.h>
+#include "main.h"
 
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
-int main(void)
+int main(int ac, char **av)
 {
-    struct dog my_dog;
+ssize_t n;
 
-    my_dog.name = "Poppy";
-    my_dog.age = 3.5;
-    my_dog.owner = "Bob";
-    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
-    return (0);
+if (ac != 2)
+{
+dprintf(2, "Usage: %s filename\n", av[0]);
+exit(1);
+}
+n = read_textfile(av[1], 114);
+printf("\n(printed chars: %li)\n", n);
+n = read_textfile(av[1], 1024);
+printf("\n(printed chars: %li)\n", n);
+return (0);
 }
